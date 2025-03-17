@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+body{
+    
+    background:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNDU4LXBhdHRlcm4tMDI2ZC14LmpwZw.jpg");
+    background-position: center center;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* main name */
+.header{
+   font-size: 200px;
+   padding: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0 0 60px;
+    filter: drop-shadow(0 0 0.75rem crimson) ;
+    
+
+}
+
+
+
+
+/* Queiz part */
+.quiz-section{
+  
+   
+  width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quiz-container{
+    flex-direction: column;
+    width: 40%;
+    display: flex;
+    background: rgb(131, 46, 60);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px 100px 0 0;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px, rgba(5, 5, 5, 0.3) 10px 10px, rgba(20, 15, 18, 0.2) 15px 15px, rgba(214, 78, 164, 0.1) 20px 20px, rgba(83, 46, 70, 0.05) 25px 25px;
+
+  
+
+   
+}
+.question-container{
+    width: 100%;
+    height: 15vh;
+    font-size: 80px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 100px 100px 0 0 ;
+}
+.answer-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 0 0 0;
+   
+}
+.answer-container button {
+    background-color: white;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px, rgba(5, 5, 5, 0.3) 10px 10px, rgba(20, 15, 18, 0.2) 15px 15px, rgba(214, 78, 164, 0.1) 20px 20px, rgba(83, 46, 70, 0.05) 25px 25px;
+    font-size: 80px;
+    border: none;
+    width: 80%;
+    height: 180px;
+    margin: 50px 50px;
+    padding: 10px;
+    text-align: left;
+    word-spacing: 65px;
+    border-radius: 50px;
+    font-weight: bold;
+
+}
+
+.answer-container button:hover{
+
+    background-color: lightgreen;
+
+}
+.decision{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.direction{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.move{
+    font-size: 70px;
+    padding: 30px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px, rgba(5, 5, 5, 0.3) 10px 10px, rgba(20, 15, 18, 0.2) 15px 15px;
+
+}
+.move:hover{
+    background: #d8e4e4;
+}
+
+#submit{
+    font-size: 70px;
+    padding:30px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px, rgba(5, 5, 5, 0.3) 10px 10px, rgba(20, 15, 18, 0.2) 15px 15px;
+
+}
+
+#submit:hover{
+    background: #f8746d;
+    color: white;
+}
+
+.progress{
+    margin-top: 50px;
+ 
+    width: 20%;
+}
+progress {
+    width: 100%;
+    height:40px;
+
+}
+
+/* dashboard-section */
+.dashboard-section{
+    margin-top:50vh;
+    width: 50%;
+    margin-bottom: 22vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 100px;
+
+}
+
+.palyercard{
+    width: 100%;
+    background-color:#f8746d;
+    padding: 60px;
+    display: flex;
+    column-gap: 300px;
+    color: white;
+    border-radius: 100px;
+    border:20px solid white;
+
+
+}
+
+
+img{
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border: 25px solid white; 
+    
+    filter: drop-shadow(0 0 0.75rem rgb(238, 5, 52)) ;
+   
+   
+}
+
+
+
+#progressBar2[value] {
+    --color:  
+      linear-gradient(red    0 0) 0 /calc(var(--w)*.3 - 100%) 1px,
+     
+      linear-gradient(orange 0 0) 0 /calc(var(--w)*.6 - 100%) 1px,
+      green;
+    --background: lightgrey; /* the background color */
+   
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    position: absolute;
+    inset: 0;
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--background);
+    transform: rotate(-90deg);
+    -webkit-mask: radial-gradient(#0000 59%,#000 60% 70%,#0000 71%)
+}
+#progressBar2[value]::-webkit-progress-bar {
+    background: var(--background);
+}
+#progressBar2[value]::-webkit-progress-value {
+    background: var(--color);
+}
+#progressBar2[value]::-moz-progress-bar {
+    background: var(--color);
+}
+  
+label {
+    --w: 150px; /* the width*/
+    
+    font-size: 110px;
+    font-weight: bold;
+    display: inline-grid;
+    place-content: center;
+    width: var(--w);
+    aspect-ratio: 1;
+    padding: 250px;
+    position: relative;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 0.75rem rgb(238, 5, 5)) ;
+
+}
+
+.QuestionSattus{
+    font-size: 80px;
+}
+
+.review{
+    margin-top: 100px;
+    border: none;
+    background: white;
+    font-weight: bold;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px;
+    padding: 30px 50px;
+    font-size: 70px;
+    border-radius: 40px;
+
+}
+
+.review:hover{
+     background: #f3b9b6;
+}
+
+
+.review-section{
+    margin-top: 60vh;
+    margin-bottom:25vh;
+    width: 65%;
+    background: rgb(255, 255, 255);
+    padding: 150px;
+    border-radius: 75px;
+    border: #f8746d 4px solid;
+    font-weight: bold;
+    font-size: 75px;
+
+}
+
+.correct{
+    background:lightgreen;
+    padding: 50px;
+    padding: 80px 120px;
+    border-radius: 70px 70px 0 0 ;
+}
+.incorrect{
+    margin-top: 40px;
+    background:rgb(247, 110, 110);
+    padding: 80px 120px;
+    border-radius:0 0 70px 70px  ;
+}
+.restart{
+    margin-top: 50px;
+    border: none;
+    background: rgb(253, 41, 41);
+    font-weight: bold;
+    font-size: 70px;
+    box-shadow: rgba(24, 19, 22, 0.4) 5px 5px;
+    padding: 50px 50px;
+    border-radius:40px;
+    color: white;
+    margin-left: 40%;
+}

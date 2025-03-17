@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quixe game</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <div class="all">
+            <div class="header">
+                <h1>Quiz</h1>
+            </div>
+            <div class="quiz-section" id="quiz-section">
+                
+      
+                    <div class="quiz-container">
+                        <div class="question-container" id="question-container"><h2>Loading.......</h2></div>
+
+                        <div class="answer-container" id="answer-container">
+                        
+                        </div>
+                        <div class="decision">
+                            <div class="direction">
+                                <button class="move" id="movePrev" onclick="questionChoose(0)">
+                                    <i class="fa-solid fa-arrow-left"></i> Prev
+                                </button>
+                                <button class="move" id="moveNext" onclick="questionChoose(1)">
+                                    Next <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="submit-continer">
+                                <button id="submit" onclick="submitQuiz()">Submit</button>
+                            </div>
+                        </div>
+
+
+                </div>
+                <div class="progress" >
+                    <progress id="progressBar" value="10" max="100"></progress>
+
+
+                </div>
+            </div>
+
+
+            <div class="dashboard-section" id="dashboard-section"  style="display: none;">
+
+                <div class="palyercard">
+                    <div class="imgProfile">
+                        <img src="https://img.freepik.com/premium-vector/portrait-hand-darwn-boy-vector-cartoon-illustration_926199-3757541.jpg?semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="ProgressSatus">
+                        <div class="progressBarStatus">
+                            <label> Progress<progress id="progressBar2" value="0" max="10"></progress></label>
+
+
+                            
+                        </div>
+                        <div class="QuestionSattus">
+                            <h2>Correct Answers: <span id="correctCount">0</span></h2>
+                            <h2>Wrong Answers: <span id="incorrectCount">0</span></h2>
+                            <button class="review" onclick="ViewReview()">Review</button>
+                        
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+
+
+
+            <div id="review-section" class="review-section" style="display: none;">
+                <h2>Review Your Answers</h2>
+
+                <div class="correct">
+                    <h3>Correct Answers:</h3>
+                    <ul id="correct-list"></ul>
+                </div>
+                <div class="incorrect">
+                    <h3>Incorrect Answers:</h3>
+                    <ul id="incorrect-list"></ul>
+                </div>
+                <button onclick="restartQuiz()" class="restart">Start Again</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
