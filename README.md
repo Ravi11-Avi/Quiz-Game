@@ -5,3 +5,5 @@ Its a Quiz game I had make it little attactive UI.
 - HTML
 
 If you spot any mistakes, I'd love your advice!🚀 at- raviranjan.bhakt@gmail.com
+
+run this at zoom 25% of browser
